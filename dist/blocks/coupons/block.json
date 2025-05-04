@@ -1,0 +1,89 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "custom/coupon-block",
+    "title": "Couponx",
+    "description": "Display a styled coupon with discount code, image, and description.",
+    "icon": {
+        "src": "ticket",
+        "background": "#fef08a",
+        "foreground": "#1e293b"
+    },
+    "category": "common",
+    "keywords": [
+        "coupon",
+        "discount",
+        "offer",
+        "deal"
+    ],
+    "attributes": {
+        "title": {
+            "type": "string",
+            "default": "Get Discount"
+        },
+        "code": {
+            "type": "string",
+            "default": "SAVE15"
+        },
+        "description": {
+            "type": "string",
+            "default": "Use this code at checkout to get a special discount!"
+        },
+        "image": {
+            "type": "object",
+            "default": {
+                "url": null,
+                "id": null,
+                "alt": ""
+            }
+        },
+        "buttonText": {
+            "type": "string",
+            "default": "Redeem Now"
+        },
+        "buttonUrl": {
+            "type": "string",
+            "default": "#"
+        },
+        "buttonColor": {
+            "type": "string",
+            "default": "#4ade80"
+        },
+        "textColor": {
+            "type": "string",
+            "default": "#ffffff"
+        },
+        "discountType": {
+            "type": "string",
+            "default": "percentage"
+        },
+        "discountValue": {
+            "type": "string",
+            "default": "15%"
+        },
+        "borderRadius": {
+            "type": "number",
+            "default": 8
+        },
+        "borderStyle": {
+            "type": "string",
+            "default": "dashed"
+        },
+        "borderWidth": {
+            "type": "number",
+            "default": 2
+        },
+        "borderColor": {
+            "type": "string",
+            "default": "#e0e0e0"
+        },
+         "showButton": {
+            "type": "boolean",
+            "default": true
+        }
+    },
+    "supports": {},
+  "editorStyle": "ultimate_blocks-cgb-block-editor-css",
+  "editorScript": "ultimate_blocks-cgb-block-js",
+  "style": "ultimate_blocks-cgb-style-css"
+}
